@@ -1,12 +1,16 @@
 import React from 'react';
 import CartWidget from './CartWidget';
+import logo from '../../img/logo.png';
 
 
 export const NavBar = () => {
     return (
        
         <header className="encabezado">
-            <span> Rey De Urbino </span>
+            {/* <span> Rey De Urbino </span> */}
+            <div>
+                <img src={logo} width="100px" alt="logo rey de urbino" />
+            </div>
             <nav>
                 <ul>
                     <li>

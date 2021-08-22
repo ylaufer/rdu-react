@@ -1,0 +1,48 @@
+.bodega {
+    font-family: lato;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .75em;
+    color: #cd903c;
+}
+
+.nombre {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.50em;
+}
+
+.variedad {
+    font-family: lato;
+    font-weight: 500;
+    color: #cd903c;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.precio {
+    font-family: lato;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .75em;
+}
+
+.btn-comprar {
+    font: 14px "Lato", sans-serif;
+    letter-spacing: 1px;
+    background-color: #cd903c;
+    color: white;
+    border: 1px solid #cd903c;
+    padding: 12px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: transparent;
+        color: #cd903c;
+        border: 1px solid #cd903c;
+    }
+}
