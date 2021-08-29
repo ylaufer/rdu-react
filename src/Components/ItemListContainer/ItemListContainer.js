@@ -8,9 +8,9 @@ import BeatLoader from "react-spinners/BeatLoader";
 export const ItemListContainer = () => {
     
       
-      const [data, setData] = useState([])
-      const [loading, setLoading] = useState(false)
-      const { catId } = useParams()
+      const [data, setData] = useState([]);
+      const [loading, setLoading] = useState(false);
+      const { catId } = useParams();
       const color = ("#cd903c");
 
       useEffect( ()=> {
@@ -41,7 +41,10 @@ export const ItemListContainer = () => {
                     <BeatLoader color={color} loading={loading} size={15} />
                  </div>
            
-               : <ItemList productos={data}/>    
+               : <>
+               <h1 className="mt-3">{catId}</h1>
+               <ItemList productos={data}/>    
+               </>
               }
           </>
       )

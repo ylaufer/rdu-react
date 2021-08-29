@@ -18,7 +18,7 @@ export const ItemDetail = ({category, bodega, nombre, desc, img, precio, varieda
                     <hr/>
                     <p>{desc}</p>
                     <p className="precio">Precio: ${precio}</p>
-                    <Link to={`/category/${category}`} className="btn-comprar mt-2">Volver</Link>
+                    <Link to={`/category/${category}`} className="btn-comprar mt-2">Volver a Categoría</Link>
                 </div>
             </div>
         </div>
