@@ -31,17 +31,19 @@ NPM o Yarn
 
 Una vez clonado el proyecto de GitHub, ingresar desde la terminal a la carpeta rey-de-urbino. Luego, instalar dependencias con "npm i". Finalmente, ejecutar con "npm start":
 
+```
 cd rey-de-urbino
+```
 
 ```
 npm i
 ```
-
+```
 npm start
 ```
 
 ### Autores ✒️
-**Yanina Laufer** 
+Yanina Laufer
 
 ### Licencia 📄
 Este proyecto es de licencia libre.
