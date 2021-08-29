@@ -1,18 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export const ItemDetail = ({category, id, nombre, desc, img, precio}) => {
+export const ItemDetail = ({category, bodega, nombre, desc, img, precio, variedad}) => {
 
 
     return (
-        <div>
-            <h2>{nombre}</h2>
-            <p>Precio: {precio}</p>
-            <img src={img} alt={nombre}/>
-            <p>{desc}</p>
-
-
-            <Link to={`/category/${category}`} className="btn btn-primary">Volver</Link>
+    <>
+        <div className="container">
+            <div className="row">
+                <div className="col-8">
+                    <img src={img} alt={nombre}/>
+                </div>
+                <div className="col-4 mt-3 listado">
+                    <h4 className="bodega">{bodega}</h4>
+                    <h2 className="nombre">{nombre}</h2>
+                    <h3 className="variedad">{variedad}</h3>
+                    <hr/>
+                    <p>{desc}</p>
+                    <p className="precio">Precio: ${precio}</p>
+                    <Link to={`/category/${category}`} className="btn-comprar mt-2">Volver</Link>
+                </div>
+            </div>
         </div>
+    </> 
     )
 }

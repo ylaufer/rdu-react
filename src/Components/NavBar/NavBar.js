@@ -16,6 +16,9 @@ export const NavBar = () => {
             </div>
             <nav>
                 <ul className="d-flex">
+                <li>
+                        <Link className="mx-1" to={"/"}>Todos</Link>
+                    </li>
                     <li>
                         <Link className="mx-1" to={"/category/tintos"}>Tintos</Link>
                     </li>
