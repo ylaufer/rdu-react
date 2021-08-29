@@ -4,7 +4,6 @@ Este proyecto es un e-commerce de venta de vino, realizado en React.
 
 ## Dependencias incluidas en el proyecto 📦
     
-    "@emotion/react": "^11.4.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -18,6 +17,8 @@ Este proyecto es un e-commerce de venta de vino, realizado en React.
     "react-scripts": "4.0.3",
     "react-spinners": "^0.11.0",
     "web-vitals": "^1.1.2"
+
+Nota: agregue react-spinners porque es una libreria con spinners originales y customizables.
 
 ## Comenzando 🚀
 
