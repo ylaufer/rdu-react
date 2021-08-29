@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export const Item = ( {img, nombre, desc, variedad, precio, bodega} ) => {
+export const Item = ( {img, nombre, variedad, precio, bodega, id} ) => {
 
 
     return (
@@ -11,7 +12,7 @@ export const Item = ( {img, nombre, desc, variedad, precio, bodega} ) => {
                 <h2 className="nombre">{nombre}</h2>
                 <h3 className="variedad">{variedad}</h3>
                 <p className="precio">Precio: ${precio}</p>
-                <button className="btn-comprar w-100">Comprar</button>
+                <Link to={`/detail/${id}`} className="btn-comprar w-100">Ver más...</Link>
             </div>
         </div>
     )

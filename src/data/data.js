@@ -2,7 +2,7 @@
 export const data = [
     {
         id: 1,
-        category: "vinos",
+        category: "blancos",
         variedad: "Chardonnay",
         bodega: "Navarro Correas",
         nombre: "Colección Privada",
@@ -12,7 +12,7 @@ export const data = [
     },
     {
         id: 2,
-        category: "vinos",
+        category: "espumantes",
         variedad: "Extra Brut",
         bodega: "Trapiche",
         nombre: "Espumante Trapiche",
@@ -22,7 +22,7 @@ export const data = [
     },
     {
         id: 3,
-        category: "vinos",
+        category: "blend",
         variedad: "Blend",
         bodega: "Finca Las Moras",
         nombre: "Dadá",
@@ -32,7 +32,7 @@ export const data = [
     },
     {
         id: 4,
-        category: "vinos",
+        category: "tintos",
         variedad: "Malbec",
         bodega: "Trapiche",
         nombre: "Impuro",
@@ -42,7 +42,7 @@ export const data = [
     },
     {
         id: 5,
-        category: "vinos",
+        category: "espumantes",
         variedad: "Nature",
         bodega: "Navarro Correas",
         nombre: "Sparkling",
@@ -52,7 +52,7 @@ export const data = [
     },
     {
         id: 6,
-        category: "vinos",
+        category: "tintos",
         variedad: "Cabernet Sauvignon",
         bodega: "Trapiche",
         nombre: "Impuro",
@@ -62,7 +62,7 @@ export const data = [
     },
     {
         id: 7,
-        category: "vinos",
+        category: "blancos",
         variedad: "Brut Nature",
         bodega: "Navarro Correas",
         nombre: "Grand Cuvee",
@@ -72,7 +72,7 @@ export const data = [
     },
     {
         id: 8,
-        category: "vinos",
+        category: "tintos",
         variedad: "Cabernet Sauvignon",
         bodega: "El Esteco",
         nombre: "El Esteco",

@@ -1,6 +1,7 @@
 import React from 'react';
 import CartWidget from './CartWidget';
 import logo from '../../img/logo.png';
+import { Link } from 'react-router-dom'
 
 
 export const NavBar = () => {
@@ -9,27 +10,23 @@ export const NavBar = () => {
         <header className="encabezado">
             {/* <span> Rey De Urbino </span> */}
             <div>
+            <Link to={"/"}>
                 <img src={logo} width="100px" alt="logo rey de urbino" />
+            </Link>
             </div>
             <nav>
-                <ul>
+                <ul className="d-flex">
                     <li>
-                        <a href="#">Inicio</a>
+                        <Link className="mx-1" to={"/category/tintos"}>Tintos</Link>
                     </li>
                     <li>
-                        <a href="#">Vinos</a>
+                        <Link className="mx-1" to={"/category/blancos"}>Blancos</Link>
                     </li>
                     <li>
-                        <a href="#">Cervezas</a>
+                        <Link className="mx-1" to={"/category/blend"}>Blend</Link>
                     </li>
                     <li>
-                        <a href="#">Vermú</a>
-                    </li>
-                    <li>
-                        <a href="#">Gin</a>
-                    </li>
-                    <li>
-                        <a href="#">Grappa</a>
+                        <Link className="mx-1" to={"/category/espumantes"}>Espumantes</Link>
                     </li>
                 </ul>
             </nav>
