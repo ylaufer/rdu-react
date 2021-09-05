@@ -8,7 +8,8 @@ export const data = [
         nombre: "Colección Privada",
         precio: 1200,
         desc: "Un vino alucinante",
-        img: "../img/vinos/coleccion_privada_chardonnay.jpg"
+        img: "../img/vinos/coleccion_privada_chardonnay.jpg",
+        stock: 120
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ export const data = [
         nombre: "Espumante Trapiche",
         precio: 500,
         desc: "Es lo más rico que vi en mi vida",
-        img: "../img/vinos/trapiche_extra_brut.jpg"
+        img: "../img/vinos/trapiche_extra_brut.jpg",
+        stock: 130
     },
     {
         id: 3,
@@ -28,7 +30,8 @@ export const data = [
         nombre: "Dadá",
         precio: 200,
         desc: "Medio pelo",
-        img: "../img/vinos/las_moras_blend.jpg"
+        img: "../img/vinos/las_moras_blend.jpg",
+        stock: 140
     },
     {
         id: 4,
@@ -38,7 +41,8 @@ export const data = [
         nombre: "Impuro",
         precio: 1700,
         desc: "Zafa bastante",
-        img: "../img/vinos/trapiche_impuro.jpg"
+        img: "../img/vinos/trapiche_impuro.jpg",
+        stock: 150
     },
     {
         id: 5,
@@ -48,7 +52,8 @@ export const data = [
         nombre: "Sparkling",
         precio: 2200,
         desc: "Una cosa maravillosa",
-        img: "../img/vinos/navarro_correas_nature.jpg"
+        img: "../img/vinos/navarro_correas_nature.jpg",
+        stock: 120
     },
     {
         id: 6,
@@ -58,7 +63,8 @@ export const data = [
         nombre: "Impuro",
         precio: 1200,
         desc: "Un poco áspero",
-        img: "../img/vinos/trapiche_impuro_cabernet.jpg"
+        img: "../img/vinos/trapiche_impuro_cabernet.jpg",
+        stock: 100
     },
     {
         id: 7,
@@ -68,7 +74,8 @@ export const data = [
         nombre: "Grand Cuvee",
         precio: 1300,
         desc: "riquísimo",
-        img: "../img/vinos/navarro_correas_espumante_grand_cuvee.jpg"
+        img: "../img/vinos/navarro_correas_espumante_grand_cuvee.jpg",
+        stock: 120
     },
     {
         id: 8,
@@ -78,6 +85,7 @@ export const data = [
         nombre: "El Esteco",
         precio: 1000,
         desc: "Vos fijate",
-        img: "../img/vinos/el_esteco_el_esteco.jpg"
+        img: "../img/vinos/el_esteco_el_esteco.jpg",
+        stock: 100
     }
 ]

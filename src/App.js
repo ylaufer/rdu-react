@@ -4,32 +4,34 @@ import './styles/styles.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import { ItemDetailContainer } from "./Components/ItemDetailContainer/ItemDetailContainer";
+import { CartProvider } from './context/CartContext.js';
 
 
 function App() {
   return (<>
     
-
-    <BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
         < NavBar />
         <Switch>
           <Route exact path="/">
             <ItemListContainer/>
           </Route>
-            <Route exact path="/category/:catId">
-              <ItemListContainer/>
-            </Route>
-            <Route exact path="/detail/:itemId">
-              <ItemDetailContainer/>
-            </Route>
-            <Route exact path="/cart">
-               <h1>Carrito</h1>
-            </Route>
-            <Route path="*">
-                <Redirect to="/"/>
-            </Route>
-          </Switch>
+          <Route exact path="/category/:catId">
+            <ItemListContainer/>
+          </Route>
+          <Route exact path="/detail/:itemId">
+            <ItemDetailContainer/>
+          </Route>
+          <Route exact path="/cart">
+            <h1>Carrito</h1>
+          </Route>
+          <Route path="*">
+            <Redirect to="/"/>
+          </Route>
+        </Switch>
       </BrowserRouter>
+    </CartProvider>
   </>);
 }
 

@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 
-const CartWidget = () => {
+export const CartWidget = () => {
+
+    const {cantidadCarrito} = useContext(CartContext);
+
     return ( 
         <div>
             <Link to="/cart">
-                <FaShoppingCart className="cartWidget"/>
+                <div className="cartWidget">
+                    <FaShoppingCart />
+                    <span>{cantidadCarrito()}</span>
+                </div>
             </Link>
         </div>
     
