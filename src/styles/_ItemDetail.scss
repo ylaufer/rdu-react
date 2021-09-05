@@ -1,7 +1,7 @@
 .listado {
     background: #f9f8f3;
     border: 1px solid #dbdbdb;
-    padding: 60px 30px 47px;
+    padding: 40px 30px 47px;
     width: 400px;
 
     .bodega {
@@ -14,4 +14,11 @@
     .precio {
         font-size: 1em;
     }
+}
+
+.btn-volver {
+    font: 14px "Lato", sans-serif;
+    letter-spacing: 1px;
+    color: gray;
+    text-transform: uppercase;
 }
