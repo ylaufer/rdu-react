@@ -8,7 +8,6 @@ export const NavBar = () => {
     return (
        
         <header className="encabezado">
-            {/* <span> Rey De Urbino </span> */}
             <div>
             <Link to={"/"}>
                 <img src={logo} width="100px" alt="logo rey de urbino" />

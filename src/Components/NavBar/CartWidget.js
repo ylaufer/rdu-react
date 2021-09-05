@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
+import { Badge } from 'react-bootstrap';
 
 export const CartWidget = () => {
 
@@ -9,15 +10,16 @@ export const CartWidget = () => {
 
     return ( 
         <div>
-            <Link to="/cart">
-                <div className="cartWidget">
+            <Link className="cartWidget" to="/cart">
+                <div>
                     <FaShoppingCart />
-                    <span>{cantidadCarrito()}</span>
+                    <Badge className="badge"> {cantidadCarrito()}</Badge>
+                    
+                
                 </div>
             </Link>
         </div>
     
-       
    );
 }
  

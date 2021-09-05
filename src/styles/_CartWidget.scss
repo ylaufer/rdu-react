@@ -1,12 +1,16 @@
 .cartWidget {
     font-size: 30px;
     color: #cd903c;
+    text-decoration: none;
 
     &:hover {
         color: white;
     }
 
-    span {
-        text-decoration: none;
+    .badge {
+        border-radius: 50%;
+        background-color: gray;
+        color: white;
+        font-size: .50em;
     }
 }
