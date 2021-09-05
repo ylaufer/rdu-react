@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import { ItemDetailContainer } from "./Components/ItemDetailContainer/ItemDetailContainer";
 import { CartProvider } from './context/CartContext.js';
+import { CartScreen } from './Components/CartScreen/CartScreen.js';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
             <ItemDetailContainer/>
           </Route>
           <Route exact path="/cart">
-            <h1>Carrito</h1>
+            <CartScreen/>
           </Route>
           <Route path="*">
             <Redirect to="/"/>
