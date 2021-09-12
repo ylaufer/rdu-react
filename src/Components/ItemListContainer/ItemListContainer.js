@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { pedirDatos } from '../../helpers/pedirDatos';
+import React, { useEffect, useState } from 'react';
 import { ItemList } from './ItemList';
 import { useParams } from 'react-router-dom';
 import BeatLoader from "react-spinners/BeatLoader";
+import { getFirestore } from '../../firebase/config'
 
 
 export const ItemListContainer = () => {
@@ -16,22 +16,33 @@ export const ItemListContainer = () => {
       useEffect( ()=> {
         setLoading(true)
 
-        pedirDatos()
-            .then(res => {
+        const db = getFirestore()
+        const productos = db.collection('productos')
 
                 if (catId) {
-                    const arrayFiltrado = res.filter( prod => prod.category === catId)
-                    setData(arrayFiltrado)
+                    const arrayFiltrado = productos.where('category', '==', catId)
+                    arrayFiltrado.get()
+                        .then((response) => {
+                            const data = response.docs.map((doc) => ({...doc.data(), id: doc.id}))
+                            console.log(data)
+                            setData(data)
+                        })
+                        .finally(()=> {
+                            setLoading(false)
+                        })
                 } else {
-                    setData(res)
+                    productos.get()
+                        .then((response) => {
+                            const data = response.docs.map((doc) => ({...doc.data(), id: doc.id}))
+                            console.log(data)
+                            setData(data)
+                        })
+                        .finally(()=> {
+                            setLoading(false)
+                        })
                 }
-            })
-            .catch(err => console.log(err))
-            .finally(()=> {
-                setLoading(false)
-            })
 
-    }, [catId])
+    }, [catId, setLoading])
   
   
       return (

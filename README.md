@@ -1,24 +1,16 @@
 # Rey de Urbino
 
-Este proyecto es un e-commerce de venta de vino, realizado en React.
+Este proyecto es un e-commerce de venta de vino, realizado en React como parte del curso de React JS de coderhouse.
 
 ## Dependencias incluidas en el proyecto 📦
     
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
+ 
     "bootstrap": "^5.0.2",
     "node-sass": "^6.0.1",
-    "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
     "react-spinners": "^0.11.0",
-    "web-vitals": "^1.1.2"
-
-Nota: agregue react-spinners porque es una libreria con spinners originales y customizables.
 
 ## Comenzando 🚀
 
